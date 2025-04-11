@@ -52,4 +52,19 @@ This script allows you to securely download **one or more files** from a **priva
 | `target_dir`  | 📍       | Local directory where files will be downloaded                     | `./downloads`                    |
 | `file1..n`    | ✅       | One or more file paths to download (relative to repo root)         | `config/app.conf`, `scripts/x.sh` |
 
+## 📥 How to use this script
 
+You can download and execute this script directly using curl:
+
+```bash
+curl -sSL https://raw.githubusercontent.com/mohamedbenhariz/download-github-files/main/download-github-files.sh -o download-github-files.sh
+chmod +x download-github-files.sh
+```
+Then run it:
+
+```bash
+./download-github-files.sh ghp_YourGitHubTokenHere your-username your-private-repo main ./downloads \
+  config/app.conf \
+  scripts/setup.sh \
+  data/sample.json
+```
