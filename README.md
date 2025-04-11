@@ -58,6 +58,8 @@ You can download and execute this script directly using curl:
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/mohamedbenhariz/download-github-files/main/download-github-files.sh -o download-github-files.sh
+```
+```bash
 chmod +x download-github-files.sh
 ```
 Then run it:
